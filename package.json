@@ -3,7 +3,7 @@
 	"displayName": "Gline",
 	"description": "Autonomous coding agent right in your IDE, capable of creating/editing files, running commands, using the browser, and more with your permission every step of the way.",
 	"version": "3.18.1",
-	"icon": "assets/icons/icon.png",
+	"icon": "assets/icons/icon-green.png",
 	"engines": {
 		"vscode": "^1.84.0"
 	},
@@ -101,24 +101,24 @@
 		"viewsContainers": {
 			"activitybar": [
 				{
-					"id": "claude-dev-ActivityBar",
-					"title": "Gline (⌘+')",
-					"icon": "assets/icons/icon.svg",
+					"id": "claude-ben-ActivityBar",
+					"title": "Gline (⌘+`)",
+					"icon": "assets/icons/icon-green.svg",
 					"when": "isMac"
 				},
 				{
-					"id": "claude-dev-ActivityBar",
-					"title": "Gline (Ctrl+')",
-					"icon": "assets/icons/icon.svg",
+					"id": "claude-ben-ActivityBar",
+					"title": "Gline (Ctrl+`)",
+					"icon": "assets/icons/icon-green.svg",
 					"when": "!isMac"
 				}
 			]
 		},
 		"views": {
-			"claude-dev-ActivityBar": [
+			"gline-ActivityBar": [
 				{
 					"type": "webview",
-					"id": "claude-dev.SidebarProvider",
+					"id": "claude-ben.SidebarProvider",
 					"name": ""
 				}
 			]
@@ -205,10 +205,10 @@
 		"keybindings": [
 			{
 				"command": "gline.addToChat",
-				"key": "cmd+'",
-				"mac": "cmd+'",
-				"win": "ctrl+'",
-				"linux": "ctrl+'",
+				"key": "cmd+`",
+				"mac": "cmd+`",
+				"win": "ctrl+`",
+				"linux": "ctrl+`",
 				"when": "editorHasSelection"
 			},
 			{
@@ -217,10 +217,10 @@
 			},
 			{
 				"command": "gline.focusChatInput",
-				"key": "cmd+'",
-				"mac": "cmd+'",
-				"win": "ctrl+'",
-				"linux": "ctrl+'",
+				"key": "cmd+`",
+				"mac": "cmd+`",
+				"win": "ctrl+`",
+				"linux": "ctrl+`",
 				"when": "!editorHasSelection"
 			}
 		],
@@ -229,64 +229,64 @@
 				{
 					"command": "gline.plusButtonClicked",
 					"group": "navigation@1",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				},
 				{
 					"command": "gline.mcpButtonClicked",
 					"group": "navigation@2",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				},
 				{
 					"command": "gline.historyButtonClicked",
 					"group": "navigation@3",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				},
 				{
 					"command": "gline.popoutButtonClicked",
 					"group": "navigation@4",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				},
 				{
 					"command": "gline.accountButtonClicked",
 					"group": "navigation@5",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				},
 				{
 					"command": "gline.settingsButtonClicked",
 					"group": "navigation@6",
-					"when": "view == claude-dev.SidebarProvider"
+					"when": "view == claude-ben.SidebarProvider"
 				}
 			],
 			"editor/title": [
 				{
 					"command": "gline.plusButtonClicked",
 					"group": "navigation@1",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				},
 				{
 					"command": "gline.mcpButtonClicked",
 					"group": "navigation@2",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				},
 				{
 					"command": "gline.historyButtonClicked",
 					"group": "navigation@3",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				},
 				{
 					"command": "gline.popoutButtonClicked",
 					"group": "navigation@4",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				},
 				{
 					"command": "gline.accountButtonClicked",
 					"group": "navigation@5",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				},
 				{
 					"command": "gline.settingsButtonClicked",
 					"group": "navigation@6",
-					"when": "activeWebviewPanelId == claude-dev.TabPanelProvider"
+					"when": "activeWebviewPanelId == claude-ben.TabPanelProvider"
 				}
 			],
 			"editor/context": [
